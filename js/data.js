@@ -23,7 +23,7 @@ var results = [
         'mysql-native': '0.4.4',
         'mariasql': '<a href="https://github.com/mscdex/node-mariasql/tree/8d0fd218246284d87ca07487f790a825640726be">master@8d0fd21</a>'
       },
-      benchmarks: '<a href="https://github.com/mscdex/node-mysql-bindings-benchmarks/tree/0c7b9bcf21c2db69c7089565e63c836161c3eabb">0c7b9bc</a>',
+      benchmarks: '<a href="https://github.com/mscdex/node-mysql-benchmarks/tree/0c7b9bcf21c2db69c7089565e63c836161c3eabb">0c7b9bc</a>',
       server: '5.5.2a (Community Server) (from stock XAMPP 1.8.0)',
       clib: '5.5.25',
     },
