@@ -93,7 +93,9 @@ $(function() {
           title: {
             text: (isInit
                    ? 'avg. time in seconds'
-                   : 'avg. ' + result.tests[i] + 's per second')
+                   : (result.tests[i].toUpperCase() === 'SELECT'
+                      ? 'avg. rows per second'
+                      :'avg. ' + result.tests[i] + 's per second'))
           }
         },
         plotOptions: {
