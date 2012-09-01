@@ -58,7 +58,8 @@ $(function() {
           backgroundColor: '#D3D3D3',
         },
         title: {
-          text: result.tests[i] + ' benchmark'
+          text: result.tests[i] + ' (' + (isInit ? 'lower' : 'higher')
+                + ' is better)'
         },
         legend: {
           enabled: false
