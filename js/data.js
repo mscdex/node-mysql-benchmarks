@@ -205,6 +205,48 @@ var results = [
       'cfg.cooldown': '10,000',
       'cfg.use_array_rows': 'false'
     }
+  },
+
+  {
+    id: '20120916',
+    when: 'September 16, 2012',
+    tests: ['Init', 'Escape', 'INSERT', 'SELECT'],
+    drivers: {
+      'C': [0.0755,11471449.6,5450.8,980660.1],
+      'PHP': [0.0768,2190734.6,4511.9,386000.2],
+      'db-mysql': [0.0806,1521963.5,3130.3,161432.7],
+      'mysql': [0.0862,894761.8,1911,310796.2],
+      'mysql-libmysqlclient': [0.0801,2790214.9,3608.5,88796.6],
+      'mysql-native': [0.0772,0,3286,313803.9],
+      'mariasql': [0.0748,2717410.6,5786,467850.1],
+      'OVERALL': [0.078742857,3083790.714,3954.928571,387048.5429]
+    },
+    versions: {
+      drivers: {
+        'PHP': '5.3.10',
+        'db-mysql': '0.7.6',
+        'mysql': '2.0.0-alpha3',
+        'mysql-libmysqlclient': '1.5.1',
+        'mysql-native': '0.4.7',
+        'mariasql': '0.1.6'
+      },
+      benchmarks: '<a href="https://github.com/mscdex/node-mysql-benchmarks/tree/55b13cb85149fa9720656f4e775bd6b3969bf9ad">55b13cb</a>',
+      server: '5.5.25a (Community Server) (from stock XAMPP 1.8.0) with `max_heap_table_size=4294967295`',
+      clib: '5.5.27',
+    },
+    setup: {
+      'Hardware': 'Intel Core i7-860 @ 2.80GHz / 8GB RAM / Ubuntu 12.04 Server (x64)',
+      '# runs': 10,
+      'cfg.create_table_query': 'CREATE TABLE test_table (alpha INTEGER, beta VARCHAR(128), pi FLOAT) ENGINE=MEMORY',
+      'cfg.insert_query': "INSERT INTO test_table VALUES (1, 'hello', 3.141)",
+      'cfg.select_query': "SELECT * FROM test_table",
+      'cfg.escape_count': '6,000,000',
+      'cfg.string_to_escape': "str\\str\"str\'str\x00str",
+      'cfg.insert_rows_count': '500,000',
+      'cfg.delay_before_select': '1,000',
+      'cfg.cooldown': '10,000',
+      'cfg.use_array_rows': 'false'
+    }
   }
 
 ];
