@@ -272,7 +272,7 @@ var results = [
         'mysql-native': '0.4.7',
         'mariasql': '0.1.13'
       },
-      benchmarks: '<a href="https://github.com/mscdex/node-mysql-benchmarks/tree/55b13cb85149fa9720656f4e775bd6b3969bf9ad">55b13cb</a>',
+      benchmarks: '<a href="https://github.com/mscdex/node-mysql-benchmarks/tree/6c0b60664edd1ee04c087b0fb23b2ea0cdf5681d">6c0b606</a>',
       server: '5.5.25a (Community Server) (from stock XAMPP 1.8.0) with `max_heap_table_size=4294967295`',
       clib: '5.5.29',
     },
