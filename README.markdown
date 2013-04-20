@@ -15,6 +15,7 @@ Supported MySQL modules
 
 * https://github.com/Sannis/node-mysql-libmysqlclient
 * https://github.com/felixge/node-mysql
+* https://github.com/sidorares/node-mysql2
 * https://github.com/sidorares/nodejs-mysql-native
 * https://github.com/mariano/node-db-mysql
 * https://github.com/mscdex/mariasql
