@@ -10,6 +10,7 @@ var bindings_list = [
     'PHP',
     'db-mysql',
     'mysql',
+    'mysql2',
     'mysql-libmysqlclient',
     'mysql-native',
     'mariasql'
