@@ -2,7 +2,7 @@
   "description": "Node.js MySQL module benchmarks",
   "keywords": ["mysql", "sql", "database", "benchmark", "rdbs"],
   "homepage": "https://github.com/mscdex/node-mysql-benchmarks",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": {
     "name": "Oleg Efimov",
     "email": "efimovov@gmail.com"
@@ -30,6 +30,7 @@
   "dependencies": {
     "cli-table" : ">=0.0.1",
     "mysql" : "2.0.0-alpha7",
+    "mysql2" : "0.1.0",
     "mysql-libmysqlclient" : "1.5.1",
     "mysql-native" : "0.4.7",
     "db-mysql" : "0.7.6",
