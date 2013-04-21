@@ -30,7 +30,7 @@
   "dependencies": {
     "cli-table" : ">=0.0.1",
     "mysql" : "2.0.0-alpha7",
-    "mysql2" : "0.1.0",
+    "mysql2" : "0.1.1",
     "mysql-libmysqlclient" : "1.5.1",
     "mysql-native" : "0.4.7",
     "db-mysql" : "0.7.6",
