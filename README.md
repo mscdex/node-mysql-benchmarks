@@ -10,9 +10,13 @@ And run:
     # mysql-modules-benchmarks
 
 
+You will also need to make sure that `max_heap_table_size=4294967295` is set in your server configuration.
+
+
 Supported MySQL modules
 -----------------------
 
+* [mariasql](https://github.com/mscdex/node-mariasql)
 * [mysql-libmysqlclient](https://github.com/Sannis/node-mysql-libmysqlclient)
 * [mysql](https://github.com/felixge/node-mysql)
 * [mysql2](https://github.com/sidorares/node-mysql2)
