@@ -24,7 +24,7 @@ exports.getConfig = function(factor) {
     use_array_rows: false,
 
     global: {
-      stat_interval: 5, // collect process metrics every n second(s)
+      stat_interval: 5000, // collect process metrics every n millisecond(s)
       stat_dir: path.resolve(__dirname, '..', 'tmp'),
       delay_before_select: 5000, // ms
       cooldown: 10000, // ms

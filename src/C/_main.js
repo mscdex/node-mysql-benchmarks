@@ -34,11 +34,9 @@ exports.run = function(cfg, test, callback) {
       results = JSON.parse(results);
     } catch (e) {}
 
-    if (cfg.global.more_stats) {
-      stats.done(function(csv) {
-        callback(results, csv);
-      });
-    } else
+    if (cfg.global.more_stats)
+      callback(results, stats.finish());
+    else
       callback(results);
   });
 };
