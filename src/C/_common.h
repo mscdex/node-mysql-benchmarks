@@ -11,12 +11,20 @@
 #include <string>
 #include <cstdio>
 #include <cstdlib>
-#include <unordered_map>
 #include <getopt.h>
 #include <mysql/mysql.h>
 
+#ifdef __APPLE__
+# include <tr1/unordered_map>
+  using namespace std::tr1;
+#else
+# include <mysql/mysql.h>
+# include <unordered_map>
+#endif
+using namespace std;
+
 MYSQL *conn;
-std::unordered_map<std::string, std::string> cfg;
+unordered_map<string, string> cfg;
 bool clearTable = true;
 
 /*

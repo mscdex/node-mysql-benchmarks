@@ -13,19 +13,19 @@ void do_benchmark_select(long int count) {
   fields = mysql_fetch_fields(result);
 
   if (cfg["use_array_rows"] == "0") {
-    std::vector<std::unordered_map<const char*, const char*> > rows;
+    vector<unordered_map<const char*, const char*> > rows;
     while((row = mysql_fetch_row(result))) {
       ++rowcount;
-      std::unordered_map<const char*, const char*> map_fields;
+      unordered_map<const char*, const char*> map_fields;
       for (i = 0; i < n_fields; ++i)
         map_fields[fields[i].name] = strdup(row[i]);
       rows.push_back(map_fields);
     }
   } else {
-    std::vector<std::vector<const char*> > rows;
+    vector<vector<const char*> > rows;
     while((row = mysql_fetch_row(result))) {
       ++rowcount;
-      std::vector<const char*> vals;
+      vector<const char*> vals;
       for (i = 0; i < n_fields; ++i)
         vals.push_back(strdup(row[i]));
       rows.push_back(vals);
