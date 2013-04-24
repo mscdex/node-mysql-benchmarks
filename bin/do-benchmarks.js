@@ -97,14 +97,17 @@ function runNextBenchmark() {
   }
 }
 
-if (fs.existsSync(cfg.global.stat_dir)) {
-  cp.exec('rm -f ' + cfg.global.stat_dir + '/*', function(err, stdout, stderr) {
+if (cfg.global.more_stats) {
+  if (fs.existsSync(cfg.global.stat_dir)) {
+    cp.exec('rm -f ' + cfg.global.stat_dir + '/*', function(err, stdout, stderr) {
+      startBenchmarks();
+    });
+  } else {
+    fs.mkdirSync(cfg.global.stat_dir);
     startBenchmarks();
-  });
-} else {
-  fs.mkdirSync(cfg.global.stat_dir);
+  }
+} else
   startBenchmarks();
-}
 
 function startBenchmarks() {
   console.log('\u001B[1mBenchmarking...\u001B[22m');
