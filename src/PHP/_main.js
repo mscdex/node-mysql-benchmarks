@@ -5,7 +5,7 @@ var Stats = require(__dirname + '/../../util/Stats');
 exports.run = function(cfg, test, callback) {
   var results = '', proc, stats;
 
-  proc = spawn('/usr/bin/env php ' + __dirname + '/' + test + '.php');
+  proc = spawn('/usr/bin/env', ['php', __dirname + '/' + test + '.php']);
   if (cfg.global.more_stats)
     stats = new Stats(proc.pid, cfg.global.stat_interval);
 
